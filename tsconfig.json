@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "typeRoots": ["./src/types"],
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "target": "es2016",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noUnusedLocals": false,
+        "noEmit": false,
+        "declaration": true,
+        "strict": false,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "strictPropertyInitialization": false,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "declarationMap": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": ["src/**/*.ts"]
+}

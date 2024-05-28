@@ -1,0 +1,36 @@
+{
+    "name": "pls-ack",
+    "version": "1.0.0",
+    "description": " basic express.js app that accepts requests standard HTTP requests at the root path of the service",
+    "main": "dist/index.js",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "dev": "concurrently \"nodemon --inspect=0.0.0.0:9229 --exec 'ts-node src/index.ts' --ext ts,json\"",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "build:image": "docker build -t $IMAGE_NAME .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "shio 🚀",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "luxon": "^3.4.4",
+        "typescript": "^5.4.5",
+        "winston": "^3.13.0"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/luxon": "^3.4.2",
+        "@types/node": "^20.12.12",
+        "concurrently": "^8.2.2",
+        "nodemon": "^3.1.0",
+        "ts-node": "^10.9.2"
+    }
+}
